@@ -3,6 +3,23 @@ import java.util.List;
 
 interface StringChecker { boolean checkString(String s); }
 
+class StringCheckerClass implements StringChecker {
+
+    String stringCheck;
+
+    public StringCheckerClass(String stringCheck) {
+        this.stringCheck = stringCheck;
+    }
+
+    public void setStringCheck(String stringCheck) {
+        this.stringCheck = stringCheck;
+    }
+    
+    public boolean checkString(String stringToBeChecked) {
+        return stringCheck.equals(stringToBeChecked);
+    }
+}
+
 class ListExamples {
 
   // Returns a new list that has all the elements of the input list for which
