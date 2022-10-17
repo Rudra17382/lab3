@@ -18,7 +18,7 @@ public class ListTests {
         input1.add("Thom Yorke");
         input1.add("Kevin Shields");
         input1.add("Lou Reed");
-        
+
         expected.add("David Bowie");
         expected.add("Thom Yorke");
         expected.add("Kevin Shields");
