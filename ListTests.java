@@ -14,6 +14,7 @@ public class ListTests {
         List<String> input1 = new ArrayList<String>();
         List<String> expected = new ArrayList<String>();
 
+        input1.add("Julian Casablancas");
         input1.add("David Bowie");
         input1.add("Thom Yorke");
         input1.add("Kevin Shields");

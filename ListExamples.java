@@ -29,9 +29,9 @@ class ListExamples {
   static List<String> filter(List<String> list, StringChecker sc) {
     List<String> result = new ArrayList<>();
     for(String s: list) {
-      if(sc.checkString(s)) {
-        result.add(0, s);
-      }
+        if(sc.checkString(s)) {
+        result.add(s);
+        }
     }
     return result;
   }
