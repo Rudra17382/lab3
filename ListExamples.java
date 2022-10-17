@@ -5,18 +5,19 @@ interface StringChecker { boolean checkString(String s); }
 
 class StringCheckerClass implements StringChecker {
 
-    String stringCheck;
+    ArrayList<String> stringCheck;
 
-    public StringCheckerClass(String stringCheck) {
+    public StringCheckerClass(ArrayList<String> stringCheck) {
         this.stringCheck = stringCheck;
     }
 
-    public void setStringCheck(String stringCheck) {
+    public void setStringCheck(ArrayList<String> stringCheck) {
         this.stringCheck = stringCheck;
     }
     
     public boolean checkString(String stringToBeChecked) {
-        return stringCheck.equals(stringToBeChecked);
+
+        return stringCheck.contains(stringToBeChecked);
     }
 }
 
